@@ -1,6 +1,5 @@
 !Updates in this version:
-!1. Cleanup
-!2. Can now declare symmetric coordinates to skip negative values in that dimension
+!1. Can now declare symmetric coordinates to skip negative values in that dimension
 !
 !Readme notes:
 !1. The gin.log file initially should contain the energy at the equilibrium geometry,
