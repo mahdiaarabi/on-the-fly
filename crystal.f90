@@ -1,4 +1,4 @@
-!Updates in this version:
+!Updates in this version: (Mahdi)
 !1. Can now declare symmetric coordinates to skip negative values in that dimension
 !
 !Readme notes:
