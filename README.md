@@ -8,11 +8,11 @@
 
 ## Overview
 
-On-the-Fly Crystal is an automated computational framework written in **Fortran 90** that constructs potential energy surfaces (PES) for transition metal complexes by coupling intelligent lattice-growth algorithms with automated DFT calculations on HPC clusters. The code systematically explores multidimensional normal-mode coordinate space, interfaces directly with **Gaussian 16** for electronic structure calculations, and uses a **binary sort tree** for efficient duplicate detection — enabling the evaluation of **80,000+ molecular structures in under 72 hours** with a **20× speedup** over manual approaches.
+On-the-Fly Crystal is an automated computational framework written in **Fortran 90** that constructs potential energy surfaces (PES) for transition metal complexes by coupling intelligent lattice-growth algorithms with automated DFT calculations on HPC clusters. The code systematically explores multidimensional normal-mode coordinate space, interfaces directly with **Gaussian 16** for electronic structure calculations, and uses a **binary sort tree** for efficient duplicate detection, enabling the evaluation of **80,000+ molecular structures in under 72 hours** with a **20× speedup** over manual approaches.
 
 ## The Problem
 
-Constructing accurate potential energy surfaces for transition metal polyhydride complexes is one of the most computationally demanding tasks in quantum chemistry. Each point on the PES requires a full DFT calculation, and the number of required points scales exponentially with dimensionality. Traditional approaches require researchers to manually generate geometries, prepare input files, submit jobs, monitor completion, handle failures, and curate results — a process that takes weeks and is prone to human error.
+Constructing accurate potential energy surfaces for transition metal polyhydride complexes is one of the most computationally demanding tasks in quantum chemistry. Each point on the PES requires a full DFT calculation, and the number of required points scales exponentially with dimensionality. Traditional approaches require researchers to manually generate geometries, prepare input files, submit jobs, monitor completion, handle failures, and curate results, a process that takes weeks and is prone to human error.
 
 ## How It Works
 
@@ -45,9 +45,9 @@ Each evaluated point is classified based on its DFT energy relative to a configu
 | Tested On | TACC Frontera (56 cores/node, 64 GB memory) |
 | Dimensionality | Configurable N-dimensional (currently 2D–6D) |
 | Max Structures | 9,999,999 (configurable allocation) |
-| Duplicate Detection | Binary sort tree — O(log n) |
+| Duplicate Detection | Binary sort tree, O(log n) |
 | Lattice Strategy | Simplicial growth with symmetric coordinate support |
-| Output | `outputLattices.txt` — coordinates and DFT energies |
+| Output | `outputLattices.txt`, coordinates and DFT energies |
 
 ## File Structure
 
@@ -106,7 +106,7 @@ Polls the Gaussian log file at 1-second intervals, verifying:
 
 ## Test System
 
-The default configuration models an **iron polyhydride complex** \[FeH₂(PH₃)₄\]⁺ — a transition metal system with:
+The default configuration models an **iron polyhydride complex** \[FeH₂(PH₃)₄\]⁺ a transition metal system with:
 - Iron center with 15 hydrogen atoms and 4 phosphorus ligands
 - Charge: +1, Multiplicity: 1 (singlet)
 - DFT: TPSSh functional, def2-TZVPP basis set
@@ -116,7 +116,7 @@ This system was chosen for its relevance to hydrogen exchange mechanisms in orga
 
 ## Publications
 
-1. **M. Aarabi**, J. Eckert, B. Poirier, "Automated PESs up to Six-Dimensional for Transition Metal Complex Using Parallel On-the-fly Crystal Code," *J. Chem. Theory Comput.* (2026) — Submitted.
+1. **M. Aarabi**, J. Eckert, B. Poirier, "Automated PESs up to Six-Dimensional for Transition Metal Complex Using Parallel On-the-fly Crystal Code," *J. Chem. Theory Comput.* (2026), Submitted.
 
 2. **M. Aarabi**, A. Pandey, B. Poirier, "On-the-fly Crystal: How to reliably and automatically characterize and construct PESs," *J. Comput. Chem.* 45 (2024) 1261–1278. [DOI: 10.1002/jcc.27285](https://doi.org/10.1002/jcc.27285)
 
