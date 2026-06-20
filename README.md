@@ -124,9 +124,8 @@ This system was chosen for its relevance to hydrogen exchange mechanisms in orga
 
 ## Author
 
-**Mahdi (Matt) Aarabi, Ph.D.**  
-Computational Scientist | Widener University  
-[LinkedIn](https://www.linkedin.com/in/mahdi--aarabi/)
+**Mahdi Aarabi, Ph.D.**  
+Computational Scientist 
 
 ## Citation
 
@@ -145,6 +144,3 @@ If you use this code in your research, please cite:
 }
 ```
 
-## License
-
-Please cite the publications above if you use or adapt this code.
