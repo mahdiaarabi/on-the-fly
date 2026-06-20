@@ -118,7 +118,7 @@ This system was chosen for its relevance to hydrogen exchange mechanisms in orga
 
 1. **M. Aarabi**, J. Eckert, B. Poirier, "Automated PESs up to Six-Dimensional for Transition Metal Complex Using Parallel On-the-fly Crystal Code," *J. Chem. Theory Comput.* (2026), Submitted.
 
-2. **M. Aarabi**, A. Pandey, B. Poirier, "On-the-fly Crystal: How to reliably and automatically characterize and construct PESs," *J. Comput. Chem.* 45 (2024) 1261–1278. [DOI: 10.1002/jcc.27285](https://doi.org/10.1002/jcc.27285)
+2. **M. Aarabi**, A. Pandey, B. Poirier, "On-the-fly Crystal: How to reliably and automatically characterize and construct PESs," *J. Comput. Chem.* 45 (2024) 1261–1278.
 
 3. **M. Aarabi** et al., "Quantum dynamical investigation of dihydrogen–hydride exchange in a transition metal polyhydride complex," *J. Phys. Chem. A* 127 (2023) 6385–6399.
 
